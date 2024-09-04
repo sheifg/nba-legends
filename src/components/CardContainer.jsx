@@ -11,12 +11,10 @@ const CardContainer = ({ data, search }) => {
         */}
         
       <Row className="g-3 justify-content-center mt-4">
-        {console.log(data)}
-        {/* filter: to search accordingly to name, will give an array
+        {/* data.filter: to search accordingly to name, will give an array
             It is used to make sure that the card contains the criteria that I am looking for(in that case the criteria is the search, because in case I want to filter by name, so it is necessary to take in account that the cards that they will be shown contains that name.
             
-            map: it will loop over and select the cards accordinly to the name. It is used to show the cards in the container */}
-        {/* data.filter:  */}
+            .map: it will loop over and select the cards accordinly to the name. It is used to show the cards in the container */}
         {data.filter((item) =>
           item.name.toLowerCase().includes(search.toLowerCase())
         ).map((item, index) => (

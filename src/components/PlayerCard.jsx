@@ -13,6 +13,7 @@ const PlayerCard = ({name, img, stat}) => {
                 : (
                     <div className='d-flex align-items-center player-logo'>
                         <ul className='m-auto'>
+                            {/* Destructuring the element/item: [statistic, amount] */}
                             {Object.entries(stat).map(([statistic, amount], index) => (
                                 <li key={index} className='h5 text-start list-unstyled'>
                                 🏀 {`${statistic}: ${amount}`}
